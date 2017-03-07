@@ -1,0 +1,6 @@
+footer{
+  @include line-height;
+  color: $primary-color;
+  text-align: center;
+  padding: 40px 0;
+}

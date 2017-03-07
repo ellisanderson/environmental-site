@@ -1,0 +1,62 @@
+@import "partials/_variables.scss";
+@import "partials/_header.scss";
+@import "partials/_pledge.scss";
+@import "partials/_issues.scss";
+@import "partials/_footer.scss";
+
+body{
+  background-color: $secondary-color;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, ol, ul,{
+  margin:0;
+  padding:0;
+}
+
+hr{
+  margin: 20px 0;
+}
+
+
+
+
+// MEDIA QUERIES_____________________________________________
+
+@media (min-width:767px) {
+  header{
+    nav{
+      padding: 10px 15%;
+    }
+  }
+
+  .pledge{
+    padding: 40px 15%;
+  }
+
+  .issues{
+    overflow: hidden;
+
+    .issues-text{
+      @include large-side-padding;
+    }
+
+  }
+
+  footer{
+    @include flexbox;
+  }
+
+}
+
+@media (min-width:1000px){
+  .issues{
+    @include large-side-padding;
+
+    article{
+      margin:1%;
+      width: 23%;
+      float: left;
+      min-height: 420px;
+    }
+  }
+}

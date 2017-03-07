@@ -1,0 +1,14 @@
+.pledge{
+  background-color: $primary-color;
+
+  .pledge-text{
+    @include line-height;
+    padding:40px 3%;
+    text-align: center;
+    color: white;
+
+    h2{
+      text-transform: uppercase;
+    }
+  }
+}

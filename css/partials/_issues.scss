@@ -1,0 +1,49 @@
+.issues{
+  padding:40px 0;
+  border-bottom: 1px solid $tertiary-color;
+  margin: 0 auto;
+
+  .issues-text{
+    @include mid-side-padding;
+    @include line-height;
+    text-align: center;
+
+    h2{
+      color:$primary-color;
+      text-transform: uppercase;
+    }
+
+    hr, p{
+      color:$tertiary-color;
+    }
+  }
+
+  article{
+    background-color: white;
+    margin: 5%;
+    padding:20px 20px 40px;
+    @include line-height;
+    text-align: center;
+    box-sizing: border-box;
+
+    i{
+      font-size: 30px;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      padding: 10px;
+      border-radius: 50%;
+      width: 30px;
+    }
+
+    i:hover{
+      background-color: $primary-color;
+      color: white;
+    }
+
+    h3{
+      margin-top: 15px;
+      color: $primary-color;
+    }
+
+  }
+}

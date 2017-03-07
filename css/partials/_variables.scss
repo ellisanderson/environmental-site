@@ -1,0 +1,31 @@
+$primary-color:#305291;
+$secondary-color:#F2F2F2;
+$tertiary-color: #666666;
+
+@mixin vertical-center {
+  position: relative;
+  transform: translateY(-50%);
+  top: 32%;
+}
+
+@mixin small-side-padding {
+  padding: 0 3%;
+}
+
+@mixin mid-side-padding {
+  padding: 0 7%;
+}
+
+@mixin large-side-padding {
+  padding: 40px 15%;
+}
+
+@mixin flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin line-height {
+  line-height: 2rem;
+}
